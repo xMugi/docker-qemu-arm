@@ -29,7 +29,7 @@ pkg install git
 ```
 
 ```bash
-git clone https://github.com/egandro/docker-qemu-arm.git
+git clone https://github.com/xMugi/docker-qemu-arm.git
 ```
 
 ```bash
