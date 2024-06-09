@@ -75,7 +75,7 @@ Docker can't connect (for reasons only known to qemu/Alpine/Android/Google)
 alpine:~# docker run hello-world
 docker: error during connect: Head "http://%2Fvar%2Frun%2Fdocker.sock/_ping": read unix @->/var/run/docker.sock: read: connection reset by peer.
 alpine:~# service docker stop
- * Stopping Docker Daemon ...                                                                                                                                              [ ok ]
+ * Stopping Docker Daemon ...           [ ok ]
 alpine:~# service docker start
  * Starting Docker Daemon ...
 ```
