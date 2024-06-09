@@ -155,13 +155,19 @@ expect "#"
 send "sed -i 's|^#http://|http://|' /etc/apk/repositories\r"
 
 expect "#"
-send "apk update && apk add docker ip6tables\r"
+send "apk update && apk add docker docker-compose ip6tables\r"
 
 expect "#"
 send "service docker start\r"
 
 expect "#"
 send "rc-update add docker\r"
+
+expect "#"
+send "docker volume create portainer_data\r"
+
+expect "#"
+send "docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest\r"
 
 expect "#"
 send "apk add zram-init\r"
