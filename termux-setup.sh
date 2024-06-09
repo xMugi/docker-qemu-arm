@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-export REPO_URL=https://github.com/egandro/docker-qemu-arm.git
+export REPO_URL=https://github.com/xMugi/docker-qemu-arm.git
 export BRANCH=main
 
 pkg update -y
