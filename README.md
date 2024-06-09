@@ -14,27 +14,45 @@ This is a automatic installation script. As RAM is always an issue on a cell pho
 ### Quick Install
 
 ```bash
-$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/egandro/docker-qemu-arm/master/termux-setup.sh)"
-# change you alpine root passwort or run the custom installer!
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/xMugi/docker-qemu-arm/main/termux-setup.sh)"
 ```
+# change you alpine root passwort or run the custom installer!
 
 ### Custom Install
 
 ```bash
-$ pkg update
-$ pkg install git
-$ git clone https://github.com/egandro/docker-qemu-arm.git
-$ cd docker-qemu-arm
-$ cp config.sample config.env
-$ # vi config.env # change everything you want to need to change
-$ ./install.sh
+pkg update
+```
+
+```bash
+pkg install git
+```
+
+```bash
+git clone https://github.com/egandro/docker-qemu-arm.git
+```
+
+```bash
+cd docker-qemu-arm
+```
+
+```bash
+cp config.sample config.env
+```
+
+# change everything you want to need to change
+```bash
+nano config.env
+```
+
+```bash
+./install.sh
 ```
 
 ### Run
 
 ```bash
-$ $HOME/alpine
-$ ./startqemu.sh
+./$HOME/alpine/startqemu.sh
 ```
 
 ## Postinstall & fun
