@@ -16,9 +16,9 @@ This is a automatic installation script. As RAM is always an issue on a cell pho
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/xMugi/docker-qemu-arm/main/termux-setup.sh)"
 ```
-# change you alpine root passwort or run the custom installer!
+### change you alpine root passwort!
 
-### Custom Install
+## Custom Install
 
 ```bash
 pkg update
@@ -40,16 +40,16 @@ cd docker-qemu-arm
 cp config.sample config.env
 ```
 
-# change everything you want to need to change
+### change everything you want to need to change
 ```bash
 nano config.env
 ```
-
+### Run installer
 ```bash
 ./install.sh
 ```
 
-### Run
+### start vm
 
 ```bash
 ./$HOME/alpine/startqemu.sh
