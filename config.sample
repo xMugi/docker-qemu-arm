@@ -6,10 +6,10 @@ export INSTALLATION_DIR="$HOME/alpine"
 export DNS_SERVER=8.8.8.8
 
 # careful - some cell phones don't support >4gb
-export DISK_SIZE=8G
+export DISK_SIZE=200G
 
 # Alpine requires some complexity for the password. Change this after installation!
-export ROOT_PASSWORD=Secret123
+export ROOT_PASSWORD=Password123
 
 # Alpine iso for virtual machines / change also the version number in the 'answerfile'
 # Warning: this is only tested with Alpine 3.19 - new versions new bugs/issues
